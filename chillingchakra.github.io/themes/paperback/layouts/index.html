@@ -12,7 +12,7 @@
 
       {{ range first (index .Site.Params "homepageposts" | default 3) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
       <article>
-        {{ .Render "list-item-expanded" }}
+        {{ .Render "list-item" }}
       </article>
       {{ end }}
 
