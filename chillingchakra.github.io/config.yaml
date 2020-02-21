@@ -1,0 +1,62 @@
+baseURL: https://chillingchakra.github.io
+languageCode: en-us
+defaultContentLanguage: en
+title: N to the 9th Power
+theme: paperback
+googleAnalytics: UA-59413834-1
+enableGitInfo: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 99
+
+params:
+  description: Me writing and posting some stuff.
+  homeMetaContent: Me writing and posting some stuff. Go to the 404 page for a cool image by typing anything after the slash at the end of the web url.
+  footer: Made with [Hugo](https://gohugo.io/).
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat: Jan 2, 2006
+
+menu:
+  nav:
+
+   
+    - name: RSS
+      url: /index.xml
+      weight: 2
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
